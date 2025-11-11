@@ -39,7 +39,7 @@ export function NotesProvider({ children }) {
   const toggleArchive = (id) => setNotes(notes.map((n) => (n.id === id ? { ...n, archived: !n.archived } : n)));
   const togglePin = (id) => setNotes(notes.map((n) => (n.id === id ? { ...n, pinned: !n.pinned } : n)));
 
-  // ✅ FILTER NOTES (exclude trashed + archived) + SORT (pinned first)
+  
   const filteredNotes = notes
     .filter(
       (n) =>
