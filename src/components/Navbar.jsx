@@ -17,8 +17,11 @@ export default function Navbar() {
           onChange={(e) => setSearch(e.target.value)}
         />
       )}
-      <div className="flex gap-3 items-center">
+      <div className="flex gap-25 items-center">
         <Link to="/add" className="hover:underline">+ Add</Link>
+        </div>
+      <div className="flex gap-25 items-center">
+        
         <Link to="/archive" className="hover:underline">Archive</Link>
         <Link to="/trash" className="hover:underline">Trash</Link>
       </div>
